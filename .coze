@@ -1,0 +1,20 @@
+[project]
+requires = [ "python-3.12" ]
+project_type = "web"
+project_id = "7703769189206704137"
+
+[dev]
+build = [ ]
+run = [
+  "sh",
+  "-c",
+  "exec python3 03_服务端/app.py --port ${DEPLOY_RUN_PORT} --no-browser"
+]
+
+[deploy]
+build = [ ]
+run = [
+  "sh",
+  "-c",
+  "export XSYU_DATA_DIR=/tmp/xsyu-data && exec python3 03_服务端/app.py --port ${DEPLOY_RUN_PORT} --no-browser"
+]

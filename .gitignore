@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+.runtime/
+03_服务端/llm_config.json
+03_服务端/exposure.json
+*.log
+.DS_Store
+Thumbs.db
+.codegraph/
+
+# Preview files
+.preview
+.cozeproj/reduction
+.codegraph
